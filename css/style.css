@@ -42,62 +42,48 @@ body, .empty3 {
   justify-content: center;
   margin: auto;
   background-color: white; }
-
-.artist__card {
-  justify-self: center;
-  margin: 3rem 0; }
-  .artist__card .profile--contact {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    background-color: black;
-    border-radius: 5px; }
-    .artist__card .profile--contact a {
-      color: white; }
-
-.artist__card img {
-  width: 15rem;
-  height: 15rem;
-  border-radius: 15px; }
-
-.main__artist img {
-  height: 30rem;
-  width: auto;
-  border-radius: 15px; }
-
-.tattoo__artist {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 3rem;
-  justify-content: center;
-  margin: auto; }
-
-.artist__card {
-  width: fit-content; }
-
-.work__gallery {
-  margin-top: 4rem; }
-
-.work__gallery--img {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.2rem;
-  justify-content: space-around;
-  justify-items: center;
-  margin: 1rem auto 3rem auto; }
-
-.work__gallery img {
-  width: 25rem;
-  height: 25rem;
-  border-radius: 15px; }
-
-.artist__card--info {
-  list-style: none;
-  text-align: center; }
+  .section__tattoo .main__artist {
+    margin: auto;
+    text-align: center; }
+    .section__tattoo .main__artist img {
+      height: 30rem;
+      width: auto;
+      border-radius: 15px; }
+    .section__tattoo .main__artist .profile--contact {
+      display: flex;
+      justify-content: space-evenly; }
+  .section__tattoo .tattoo__artist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    justify-content: center;
+    margin: auto; }
+    .section__tattoo .tattoo__artist .artist__card {
+      justify-self: center;
+      margin: 3rem 0; }
+      .section__tattoo .tattoo__artist .artist__card img {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 15px; }
+      .section__tattoo .tattoo__artist .artist__card .artist__card--info {
+        list-style: none;
+        text-align: center; }
+  .section__tattoo .work__gallery {
+    margin-top: 4rem; }
+    .section__tattoo .work__gallery .work__gallery--img {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.2rem;
+      justify-content: space-around;
+      justify-items: center;
+      margin: 1rem auto 3rem auto; }
+      .section__tattoo .work__gallery .work__gallery--img img {
+        width: 25rem;
+        height: 25rem;
+        border-radius: 15px; }
 
 /*----------hover style----------*/
 .artist__card {
-  display: inline-block;
   position: relative; }
 
 .desvanecer:hover {
