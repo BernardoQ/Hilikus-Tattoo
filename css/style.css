@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 a{
@@ -10,13 +11,14 @@ a{
 }
 
 body{
-    display: grid;
-    background-image: url("../img/background/backgroundbw1.jpg");
-    height: 100%;
+    /*background-image: url("../img/background/backgroundbw1.jpg");*/
+    background-image: url("../img/background/backgroundbw2.jpg");
     background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
+    /* background-position: top center; */
+    background-position: center;
+    background-size: auto;
     background-attachment: fixed;
+    background-color: black;
 }
 
 h1{
@@ -31,7 +33,7 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: center;
-
+   
 }
 
 .header__content{
@@ -40,7 +42,12 @@ h1{
 }
 
 .header__content li{
+    padding: 1rem;    
+}
+
+.header__content li a{
     padding: 1rem;
+    color: white;  
 }
 
 .empty1{
@@ -56,26 +63,94 @@ h1{
     background-color: none;
 }
 
+.empty3{
+    height: 30rem;
+    width: auto;
+    background-color: none;    
+    background-image: url("../img/logo/hilikuslogo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+    background-color: black;
+}
+
 .section{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
-    font-size: 2rem;
-    height: 50rem;
+    margin: auto;
     background-color: white;
+}
+
+.section__welcome{
+    justify-content: center;
+    text-align: center;
+    height: 30rem;
+}
+
+.section__tattoo{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin: auto;
+    background-color: white;
+}
+
+.artist__card{
+    justify-self: center;
+    margin: 3rem 0;
+}
+
+.artist__card img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 15px;
+}
+
+.main__artist img{
+    height: 30rem;
+    width: auto;
+    border-radius: 15px;
+}
+
+.tattoo__artist{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    justify-content: center;
+    margin: auto;
+}
+
+.artist__card{
     width: fit-content;
 }
 
-.section__artist{
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    color: white;
-    background-color: white;
+.work__gallery--img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.2rem;
+    justify-content: space-around;
+    justify-items: center;
+    width: min-content;
+    margin: 10rem auto;
 }
 
-.section__artist img{
-    width: 5rem;
-    height: 5rem;
+
+.work__gallery img{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 15px;
+}
+
+.artist__card--info{
+    list-style: none;
+    text-align: center;
+}
+
+footer{
+    height: 20rem;
+    background-color: grey;
 }
 
 
