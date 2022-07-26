@@ -1,0 +1,94 @@
+@import './variables';
+
+.section__tattoo{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin: auto;
+    background-color: white;
+}
+
+.artist__card{
+    justify-self: center;
+    margin: 3rem 0;
+}
+
+.artist__card img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 15px;
+}
+
+.main__artist img{
+    height: 30rem;
+    width: auto;
+    border-radius: 15px;
+}
+
+.tattoo__artist{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    justify-content: center;
+    margin: auto;
+}
+
+.artist__card{
+    width: fit-content;
+}
+
+.work__gallery{
+    margin-top: 4rem;
+}
+
+.work__gallery--img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.2rem;
+    justify-content: space-around;
+    justify-items: center;
+    width: min-content;
+    margin: 1rem auto 3rem auto;
+}
+
+
+.work__gallery img{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 15px;
+}
+
+.artist__card--info{
+    list-style: none;
+    text-align: center;
+}
+
+/*----------hover style----------*/
+.artist__card {
+    display:inline-block;
+    position:relative;
+  }
+  
+  .profile--contact{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    padding:10px;
+    margin:0;
+
+        &:hover{
+            display: inline-block ;
+        }
+  }
+  
+  .desvanecer:hover {
+    opacity: 0.7;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+
+    
+  } 
