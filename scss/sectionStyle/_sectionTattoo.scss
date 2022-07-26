@@ -11,6 +11,18 @@
 .artist__card{
     justify-self: center;
     margin: 3rem 0;
+
+        .profile--contact{
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            background-color: black;
+            border-radius: 5px;
+
+            a{
+                color: white;
+            }
+        }
 }
 
 .artist__card img{
@@ -47,7 +59,6 @@
     gap: 0.2rem;
     justify-content: space-around;
     justify-items: center;
-    width: min-content;
     margin: 1rem auto 3rem auto;
 }
 
@@ -67,20 +78,7 @@
 .artist__card {
     display:inline-block;
     position:relative;
-  }
-  
-  .profile--contact{
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:-1;
-    padding:10px;
-    margin:0;
-
-        &:hover{
-            display: inline-block ;
-        }
-  }
+ }  
   
   .desvanecer:hover {
     opacity: 0.7;
@@ -88,7 +86,7 @@
     -moz-transition: opacity 500ms;
     -o-transition: opacity 500ms;
     -ms-transition: opacity 500ms;
-    transition: opacity 500ms;
+    transition: opacity 500ms;    
+  }
 
-    
-  } 
+  

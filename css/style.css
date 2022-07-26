@@ -46,6 +46,14 @@ body, .empty3 {
 .artist__card {
   justify-self: center;
   margin: 3rem 0; }
+  .artist__card .profile--contact {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: black;
+    border-radius: 5px; }
+    .artist__card .profile--contact a {
+      color: white; }
 
 .artist__card img {
   width: 15rem;
@@ -76,7 +84,6 @@ body, .empty3 {
   gap: 0.2rem;
   justify-content: space-around;
   justify-items: center;
-  width: min-content;
   margin: 1rem auto 3rem auto; }
 
 .work__gallery img {
@@ -92,16 +99,6 @@ body, .empty3 {
 .artist__card {
   display: inline-block;
   position: relative; }
-
-.profile--contact {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  padding: 10px;
-  margin: 0; }
-  .profile--contact:hover {
-    display: inline-block; }
 
 .desvanecer:hover {
   opacity: 0.7;
@@ -261,6 +258,9 @@ a {
   text-decoration: none;
   color: black;
   font-size: 1.5rem; }
+
+ul {
+  padding: 0; }
 
 body {
   /*background-image: url("../img/background/backgroundbw1.jpg");*/

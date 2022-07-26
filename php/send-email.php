@@ -1,7 +1,7 @@
 <?php
 
-// Replace this with your own email address
-$to = 'joefrey.mahusay@gmail.com';
+
+$to = 'bernardo_quetglas@hotmail.com';
 
 function url(){
   return sprintf(
@@ -29,7 +29,7 @@ if($_POST) {
 
    // Set Message
    $message .= "Email from: " . $name . "<br />";
-	 $message .= "Email address: " . $email . "<br />";
+	$message .= "Email address: " . $email . "<br />";
    $message .= "Phone: " . $phone . "<br />";
    $message .= "Company: " . $company . "<br />";
    $message .= "Message: <br />";
