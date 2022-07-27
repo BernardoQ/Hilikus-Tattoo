@@ -3,8 +3,8 @@
 @import './sectionStyle/headerFooter';
 @import './sectionStyle/sectionTattoo';
 @import './sectionStyle/sectionContact';
-@import './sectionStyle/sectionPiercing';
 @import './sectionStyle/sectionWelcome';
+@import './sectionStyle/sectionPiercing';
 
 *{
     padding: 0;
@@ -79,6 +79,12 @@ h3{
     margin: auto;
     background-color: white;
 }
+
+.socialMedia__icon img{
+    height: 2rem;
+    width: 2rem;
+}  
+
 
 
 
